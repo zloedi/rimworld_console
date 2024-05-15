@@ -1,0 +1,5 @@
+﻿*.sw*
+bin/
+obj/
+.vs/
+rimworld.ln

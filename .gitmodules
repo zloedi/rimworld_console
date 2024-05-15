@@ -1,0 +1,3 @@
+[submodule "Source/ZloediUtils"]
+	path = Source/ZloediUtils
+	url = https://github.com/zloedi/ZloediUtils

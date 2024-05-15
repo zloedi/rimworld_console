@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Qonsole</name>
+	<packageId>zloedi.qonsole</packageId>
+	<author>zloedi</author>
+	<description>Quake style debug console</description>
+</ModMetaData>
