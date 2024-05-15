@@ -3,5 +3,9 @@
 	<name>Qonsole</name>
 	<packageId>zloedi.qonsole</packageId>
 	<author>zloedi</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
 	<description>Quake style debug console</description>
 </ModMetaData>

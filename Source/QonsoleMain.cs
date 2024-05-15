@@ -9,6 +9,9 @@ namespace Qon {
 [StaticConstructorOnStartup]
 public static class QonsoleMain {
 
+    // this is a Qonsole variable
+    static bool ShowQglMessage_kvar = false;
+
     static QonsoleMain() {
         try {
 
@@ -22,13 +25,17 @@ public static class QonsoleMain {
     static void QonsoleTick_kmd( string [] _ ) {
         try {
 
-        int n = ( ( int )( Time.unscaledTime * 1000 ) >> 9 ) % 4;
-        string dots = "";
-        for ( int i = 0; i < n; i++ ) {
-            dots += '.';
+        if ( ShowQglMessage_kvar ) {
+            int n = ( ( int )( Time.unscaledTime * 1000 ) >> 9 ) % 4;
+            string dots = "";
+            for ( int i = 0; i < n; i++ ) {
+                dots += '.';
+            }
+            QGL.LatePrint( "This is a QGL mod message" + dots,
+                                                    Screen.width / 2, Screen.height / 2, scale: 3,
+                                                    color: Color.magenta );
         }
-        QGL.LatePrint( "This is a QGL mod" + dots, Screen.width / 2, Screen.height / 2, scale: 3,
-                                                                            color: Color.magenta );
+
         } catch ( Exception e ) {
             Qonsole.Error( e );
         }
