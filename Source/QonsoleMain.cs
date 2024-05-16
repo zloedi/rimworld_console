@@ -22,6 +22,10 @@ public static class QonsoleMain {
         }
     }
 
+    static void QonsolePreConfig_kmd( string [] _ ) {
+        Cellophane.ConfigVersion_kvar = 10;
+    }
+    
     static void QonsoleTick_kmd( string [] _ ) {
         try {
 
